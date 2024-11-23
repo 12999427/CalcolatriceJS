@@ -1,0 +1,98 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 70vh;
+    background-color: rgb(58, 58, 58);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.288);
+}
+
+hr {
+    color: white;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-field {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    width: 100px;
+    border-radius: 5px;
+}
+
+#n1 {
+    margin-right: 20px;
+}
+
+#n2 {
+    margin-left: 20px;
+}
+
+.operationdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.operation {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+#confirm {
+    margin-left: 20px;
+}
+
+button.operation {
+    border-color: black;
+}
+
+#operazione {
+    margin: 10px;
+    width: 60%;
+    font-size: larger;
+}
+
+#risultato {
+    margin: 10px;
+    width: 80%;
+    font-size: larger;
+}
+
+.ris {
+    display: inline-block;
+    width: 60%
+}
+
+#reset {
+    width: 10%;
+    height: 65%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Calcolatrice</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/main.css">
+        <script src="script/main.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Calcolatrice</h1>
+            <hr>
+            <label for="operazione">Operazione</label>
+            <input type="text" disabled id="operazione">
+            <label for="risultato">Risultato</label>
+            <div class="ris">
+                <input type="text" disabled id="risultato">
+                <button onclick="calcola('reset')" id="reset">Reset</button>
+            </div>
+            <div class="calculator">
+                <input type="number" id="n1" class="input-field">
+                <div class="operationdiv">
+                    <button class="operation" onclick="calcola('+', this)">+</button>
+                    <button class="operation" onclick="calcola('-', this)">-</button>
+                    <button class="operation" onclick="calcola('*', this)">*</button>
+                    <button class="operation" onclick="calcola('/', this)">/</button>
+                    <button class="operation" onclick="calcola('sqrt', this)">√</button>
+                    <button class="operation" onclick="calcola('power', this)">^</button>
+                </div>
+                <input type="number" id="n2" class="input-field">
+                <button id="confirm" class="operation" onclick="calcola('=')">=</button>
+            </div>
+        </div>
+    </body>
+</html>
