@@ -44,11 +44,12 @@ function calcola (value, obj) {
                     if (n2 != 0) {
                         ris = n1/n2;
                     } else {
-                        ris = NaN;
                         alert("Impossibile dividere per 0");
+                        operatore = "";
+                        return;
                     }
                 } else if (operatore == "sqrt") {
-                    ris = (n2==NaN ? Math.pow(n1, 1/n2) : Math.pow(n1, 1/2));
+                    ris = (isNaN(n2) ? Math.pow(n1, 1/2) : Math.pow(n1, 1/n2)); //oppure sqrt per radice exp 2
                 } else if (operatore == "power") {
                     ris = Math.pow(n1, n2);
                 }
@@ -56,8 +57,11 @@ function calcola (value, obj) {
                 document.getElementById("n2").value = "";
                 document.getElementById("operazione").value = `${n1} ${operatore} ${isNaN(n2) ?  "" : n2} = ${ris}`;
                 document.getElementById("risultato").value = ris;
+                console.log(operatore);
                 operatore = "";
             }
-
+            console.log(n1);
+            console.log(n2);
+            break;
     }
 }
